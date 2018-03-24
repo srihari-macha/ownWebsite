@@ -1,0 +1,40 @@
+table {
+    font-family: Arial;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.cf-logo {
+    width: 200px;
+    float: left;
+}
+
+.header-list {
+    width: 700px;
+    float: left;
+}
+
+.header-list ul li {
+    float: left;
+    padding: 30px 25px;
+}
+
+.banner-img {
+    width: 1000px;
+    height: 400px;
+}

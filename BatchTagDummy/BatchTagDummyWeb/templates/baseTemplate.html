@@ -1,0 +1,92 @@
+<html>
+<head>
+{#    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>#}
+{#    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">#}
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/jquery-ui.css">
+    <link rel="stylesheet" href="/static/css/foundation.css">
+    <link rel="stylesheet" href="/static/css/controller.css">
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="myController">
+    <div style="width: 1000px;margin: auto">
+{#        <h1>This is Online E-commerce website</h1>#}
+        <header>
+            <div class="cf-logo">
+                <img src="../static/images/custom-furnish.png" alt="cf-logo" />
+            </div>
+            <div class="header-list">
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="">Electronics</a></li>
+                    <li><a href="">TV&Applications</a></li>
+                    <li><a href="">Home&Furniture</a></li>
+                    <li><a href="">Clothes</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div style="clear: both"></div>
+
+
+
+        <div style="border-bottom: 1px solid red"></div>
+
+
+
+        {% block content %}
+            <div>
+                <img class="banner-img" src="../static/images/banner-sofa.jpg" alt="sofa-img" />
+            </div>
+            <br/><br/>
+            <ul class="medium-block-grid-3 large-block-grid-3">
+                <li><img src="../static/images/furniture.jpeg" alt="furniture"></li>
+                <li><img src="../static/images/bed.jpeg" alt="bed-logo"></li>
+                <li><img src="../static/images/laptop.jpeg" alt="laptop"></li>
+                <li><img src="../static/images/shoes.jpeg" alt="shoes"></li>
+                <li><img src="../static/images/TV.jpeg" alt="TV"></li>
+                <li><img src="../static/images/banner-sofa.jpg" alt="sofa"></li>
+
+            </ul>
+
+        {% endblock %}
+        {#    <table>#}
+        {#        <thead>#}
+        {#        <tr>#}
+        {#            <th>Name</th>#}
+        {#            <th>Salary</th>#}
+        {#            <th>City</th>#}
+        {#            <th>Gender</th>#}
+        {#        </tr>#}
+        {#        </thead>#}
+        {#        <tbody>#}
+        {#        <tr ng-repeat="employee in employeeDetails">#}
+        {#            <td>{$ employee.name $}</td>#}
+        {#            <td>{$ employee.salary $}</td>#}
+        {#            <td>{$ employee.city $}</td>#}
+        {#            <td>{$ employee.gender $}</td>#}
+        {#        </tr>#}
+        {#        </tbody>#}
+        {#    </table>#}
+
+{#        <div style="border-bottom: 1px solid red"></div>#}
+        <footer>
+            <p>Copyrights © customfurnish.com (Kustommade.com) All Rights Reserved</p>
+        </footer>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(document).foundation();
+    })
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+<script src="/static/js/vendor/jquery.js"></script>
+<!-- this will include every plugin and utility required by Foundation -->
+<script src="/static/js/foundation.min.js"></script>
+<script src="/static/js/vendor/modernizr.js"></script>
+<script src="/static/js/controller.js"></script>
+
+</body>
+</html>
