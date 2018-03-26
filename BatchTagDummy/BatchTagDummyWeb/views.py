@@ -8,3 +8,6 @@ def view_home_page(request):
 
 def get_home_page(request):
     return render(request, 'homePage.html')
+
+def get_furniture_page(request):
+    return render(request, "furniturePage.html")
