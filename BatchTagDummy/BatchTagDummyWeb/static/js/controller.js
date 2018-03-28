@@ -16,4 +16,10 @@ myApp.controller("myController", function($scope) {
     ];
 
     $scope.employeeDetails = employeeDetails;
+
+    $scope.imageSrc = "../static/images/furniture.jpeg";
+
+    $scope.changeImage = function(source) {
+        $scope.imageSrc = source;
+    }
 });
